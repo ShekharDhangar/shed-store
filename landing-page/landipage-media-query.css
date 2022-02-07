@@ -49,16 +49,13 @@
        justify-items: flex-start;
     }
     .menu-list > li{  
-      line-height: 3rem;
+      line-height: 4.5rem;
  }
 }
 @media only screen and (max-width: 610px) {
-    .menu-list{
-      font-size: 1.25rem;
-  }
-  .menu-head > span{
-      font-size: 1.5rem;
-  }
+    .sidebar{
+        min-width: 45vw !important;
+    }
   .header-toggle > span {
       width:22px;
       height:1.85px;
@@ -73,7 +70,6 @@
   .nav-icon-container .icon-container .icon-txt{
       display: none;
   }
-  
 .search-container,
 .search-container .search-btn{
     top: 0.35rem;
@@ -96,24 +92,6 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
-  
-  .welcome-header > span{
-      font-size: 1.25rem;
-  }
-  .menu-list{
-      font-size: 1rem;
-  }
-  .menu-head > span{
-      font-size: 1rem;
-  }
-  .sidebar .sidebar-header .register{
-      font-size: 1rem;
-  }
-  .sidebar{
-      width: 50vw !important;
-  }
-}
 @media only screen and (max-width: 355px) {
   .nav-icon-container .icon-container .icon{
       width:2rem;
