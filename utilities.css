@@ -1,0 +1,40 @@
+@import url("https://shed-ui.netlify.app/component.css");
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600;1,800&family=Merriweather:ital,wght@1,900&family=Montserrat:wght@300;400;500;600;700&family=Permanent+Marker&family=Poppins:wght@300;400&display=swap');
+
+*,::before,*::after{
+    border-width: 0;
+    color: var(--clr-black);
+}
+.p-5{
+    padding: 5rem;
+}
+.bg-grey{
+    background-color: var(--clr-lightgrey);
+}
+.flex-column{
+    flex-direction: column;
+}
+.width-full{
+    width: 100%;
+    max-width: 100%;
+}
+.height-full{
+    height: 100%;
+    max-height: 100%;
+}
+.cover{
+    object-fit: cover;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.img-container  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
