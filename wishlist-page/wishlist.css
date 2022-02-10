@@ -1,9 +1,11 @@
 @import url(../product-list/product-list.css);
-
+.product-container{
+    justify-items: center;
+}
 
 .product-container .product-card-container{
     width: 100%;
-    max-width: 35rem;
+    max-width: 30rem;
 }
 .wishlist-delete .icon:hover{
     color: var(--primary-clr);
