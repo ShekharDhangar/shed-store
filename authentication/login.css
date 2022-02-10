@@ -1,0 +1,16 @@
+@import url('https://shed-ui.netlify.app/component.css');
+@import url(../utilities.css);
+@import url('/landing-page/landing-page.css');
+.navbar{
+    margin-left: auto;
+}
+.form-container{
+    margin-top: 7rem;
+    position: relative;
+    height: 40%;
+    width: 100%;
+    margin-inline: auto;
+}
+.input-with-icon .input{
+    width: 100%;
+}
