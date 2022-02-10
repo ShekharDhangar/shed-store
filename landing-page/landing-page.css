@@ -1,5 +1,8 @@
 @import url("../utilities.css");
 
+.nav-section{
+    height: 6.5rem;
+}
 /* || DISPLAY-IMAGE */
 .display-img-container {
   position: relative;
@@ -13,7 +16,7 @@
 }
 .display-img-container:hover,
 .category-container .img-container:hover {
-  transform: scale(1.035);
+  transform: scale(1.05);
 }
 
 .display-img-container .display-img {
