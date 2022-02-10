@@ -8,7 +8,6 @@ const showPasswordInp = document.querySelector('.see-password-input');
 
 trySignUp.addEventListener('click', changeForm)
 trylogIn.addEventListener('click', changeForm)
-passwordEye.addEventListener('click',show_hide_password)
 
 function changeForm(){
     signUpForm.classList.toggle('none')
@@ -16,4 +15,5 @@ function changeForm(){
 }
 // see password value 
 const show_hide_password = event => event.target.classList.toggle('view'); (showPasswordInp.getAttribute('type') == 'password')? showPasswordInp.setAttribute('type', 'text') : showPasswordInp.setAttribute('type', 'password');
+passwordEye.addEventListener('click',show_hide_password)
 
