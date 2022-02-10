@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e5dbe6b99b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/product-list/product-list.css">
+    <link rel="stylesheet" href="/product-list/product-media-query.css">
+</head>
+<body>
+    <main>
+        <header>
+          <section class="flex nav-section">
+            <div class="flex logo-container">
+              <a href="#" class="logo">shed</a>
+              <div class="nav-icon-grp lt-bold">
+                  <i class="icon size-xs fas fa-chevron-left"></i>
+                  <span class="nav-txt">Mens Style</span>
+              </div>
+            </div>
+            <nav class="w-100 h-100 navbar">
+              <ul class="list-none flex nav-link-container">
+                <div class="nav-content">
+                  <a class="nav-link" href="#">MEN</a>
+                </div>
+                <div class="nav-content">
+                  <a class="nav-link" href="#">WOMEN</a>
+                </div>
+                <div class="nav-content">
+                  <a href="#" class="nav-link">KIDS</a>
+                </div>
+              </ul>
+              <div class="flex nav-icon-container">
+                <div class="flex search-container">
+                  <input
+                    class="search-input"
+                    type="text"
+                    placeholder="Search..."
+                  />
+                  <a class="search-btn" href="#"
+                    ><i class="fa fa-search" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="flex pointer profile-box icon-container">
+                  <a href="/authentication/login.html">
+                    <i class="icon user-icon far fa-user"></i>
+                  </a>
+                  <span class="icon-txt">Profile</span>
+                </div>
+                <div class="flex pointer icon-container">
+                  <i class="icon wishlist-icon far fa-heart"></i>
+                  <span class="icon-txt">Wishlist</span>
+                </div>
+                <div class="flex pointer icon-container">
+                  <i class="icon cart-icon fas fa-shopping-bag"></i>
+                  <span class="icon-txt">Bag</span>
+                </div>
+              </div>
+            </nav>
+          </section>
+        </header>
+        <!-- <div class="current-navigation">Home / Sweatshirts and Hoodies for Men</div> -->
+        <div class="flex heading-container">
+            <p class="txt-md lt-bold heading">Style Clothing for Men</p>
+            <span>(606)</span>
+        </div>
+        <div class="relative filter-product-wrapper">
+          <section class="sticky side-filter-container">
+            <div class="side-filter">
+              <div class="filter-heading txt-md">Filters</div>
+              <div class="filter-category-container">
+                <div class="flex filter-item">
+                  <input
+                    type="checkbox"
+                    id="select-box"
+                    name="bydefault"
+                    value="nike-category"
+                    class="p-1 checkbox  pointer"
+                  />
+                  <label for="nike-category" class="lt-bold txt-xs">Nike</label>
+                </div>
+                <div class="flex filter-item">
+                  <input
+                    type="checkbox"
+                    id="select-box"
+                    name="bydefault"
+                    value="adidas-category"
+                    class="p-1 checkbox  pointer"
+                  />
+                  <label for="adidas-category" class="lt-bold txt-xs"
+                    >Adidas</label
+                  >
+                </div>
+                <div class="flex filter-item">
+                  <input
+                    type="checkbox"
+                    id="select-box"
+                    name="bydefault"
+                    value="roadster-categoory"
+                    class="p-1 checkbox  pointer"
+                  />
+                  <label for="roadster-categoory" class="lt-bold txt-xs"
+                    >Roadster</label
+                  >
+                </div>
+                <div class="flex filter-item">
+                  <input
+                    type="checkbox"
+                    id="select-box"
+                    name="bydefault"
+                    value="super-dry-category"
+                    class="p-1 checkbox  pointer"
+                  />
+                  <label for="super-dry-category" class="lt-bold txt-xs"
+                    >SuperDry</label
+                  >
+                </div>
+                <div class="flex filter-item">
+                  <input
+                    type="checkbox"
+                    id="select-box"
+                    name="bydefault"
+                    value="puma-category"
+                    class="p-1 checkbox  pointer"
+                  />
+                  <label for="puma-category" class="lt-bold txt-xs">Puma</label>
+                </div>
+              </div>
+              <div class="filter-heading txt-md">Sort</div>
+              <div class="sort-container">
+                <div class="filter-item flex">
+                  <input
+                    type="radio"
+                    class="radio-inp"
+                    id="High to low"
+                    name="radio-group"
+                  />
+                  <label class="lt-bold" for="High to low">High to low</label>
+                </div>
+                <div class="filter-item flex">
+                  <input
+                    type="radio"
+                    class="radio-inp"
+                    id="low to High"
+                    name="radio-group"
+                  />
+                  <label class="lt-bold" for="low to High">Low to High</label>
+                </div>
+                <div class="filter-item flex">
+                  <input
+                    type="radio"
+                    class="radio-inp"
+                    id="Latest"
+                    name="radio-group"
+                  />
+                  <label class="lt-bold" for="Latest">Latest</label>
+                </div>
+              </div>
+              <div class="filter-heading txt-md">Rating</div>
+              <div class="flex filter-item slider-container">
+                <input
+                  type="range"
+                  min="0"
+                  max="5"
+                  value="3"
+                  class="slider-inp"
+                />
+                <span class="slider-value lt-bold txt-sm">3</span>
+              </div>
+              <button class="reset-btn btn-xs">Reset Filters</button>
+            </div>
+          </section>
+          <section class="product-container">
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/wfwetz"
+                      alt="product image of sweatshirt"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">Roadster</span>
+                  <div class="product-description lt-bold">
+                    Navy Blue Plus Size Zipper Sweatshirts
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹899</span>
+                    <span class="strike-txt og-price txt-grey">₹2399</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/ahvkiq"
+                      alt="product image of hoodie"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">DNMX</span>
+                  <div class="product-description lt-bold">
+                    Feel Good Lilac Solid Hoodie
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹799</span>
+                    <span class="strike-txt og-price txt-grey">₹2499</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/2chnmg"
+                      alt="product image of boat headphone"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">Roadster</span>
+                  <div class="product-description lt-bold">
+                    Red Plum sweatshirt Hoodie
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹999</span>
+                    <span class="strike-txt og-price txt-grey">₹1499</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <button class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></button>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/bmmzor"
+                      alt="product image of full sleeve t-shirt"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">Roadster</span>
+                  <div class="product-description lt-bold">
+                    Colorfull style t-shirt
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹599</span>
+                    <span class="strike-txt og-price txt-grey">₹899</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/c9ffww"
+                      alt="product image of boat headphone"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">SHED</span>
+                  <div class="product-description lt-bold">
+                    Feel Good Lilac Henley Hoodie T-shirt
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹499</span>
+                    <span class="strike-txt og-price txt-grey">₹999</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/v17yda"
+                      alt="product image of joggers"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">SHED</span>
+                  <div class="product-description lt-bold">
+                    UpBeat Blue style joggers
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹1199</span>
+                    <span class="strike-txt og-price txt-grey">₹1599</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/6xpcev"
+                      alt="product image of sport shoes"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">ADIDAS</span>
+                  <div class="product-description lt-bold">
+                    Sport shoes with style
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹799</span>
+                    <span class="strike-txt og-price txt-grey">₹1499</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/1dyvmk"
+                      alt="product image of ucb t-shirt"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">UCB</span>
+                  <div class="product-description lt-bold">
+                    Polo T-Shirt with Tipping
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹599</span>
+                    <span class="strike-txt og-price txt-grey">₹699</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/tubgi1"
+                      alt="product image of Shirt"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">HIGHLANDER</span>
+                  <div class="product-description lt-bold">
+                    Slim Fit Casual Shirt
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹699</span>
+                    <span class="strike-txt og-price txt-grey">₹999</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/8ed5ur"
+                      alt="product image of tshirt"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">LEE COOPER</span>
+                  <div class="product-description lt-bold">
+                    Brand and Comfort Full Sleeve
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹799</span>
+                    <span class="strike-txt og-price txt-grey">₹1499</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/yc3qp6"
+                      alt="product image of shirt"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">DNMX</span>
+                  <div class="product-description lt-bold">
+                    Style shirs for men
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹799</span>
+                    <span class="strike-txt og-price txt-grey">₹1199</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/cnwbr3"
+                      alt="product image of jeans"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">Harbour</span>
+                  <div class="product-description lt-bold">
+                    Men skinny fit jeans
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹1399</span>
+                    <span class="strike-txt og-price txt-grey">₹2499</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/jkvqtp"
+                      alt="product image of kurta"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">SHED</span>
+                  <div class="product-description lt-bold">
+                    Men's Solid Black Long Kurta
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹1399</span>
+                    <span class="strike-txt og-price txt-grey">₹1699</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/vjuewv"
+                      alt="product image of infant clothes"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">LIL DNMX</span>
+                  <div class="product-description lt-bold">
+                    Boys Woven Design Nehru Jacket
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹899</span>
+                    <span class="strike-txt og-price txt-grey">₹1299</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/jh78z7"
+                      alt="product image of casual shoes"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">HRX by HRITHIK ROSHAN</span>
+                  <div class="product-description lt-bold">
+                    Men Chunky Sneakers
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹2799</span>
+                    <span class="strike-txt og-price txt-grey">₹3499</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-container">
+              <div class="flex w-100 relative product-card">
+                <div class="w-100 h-100 relative product-header">
+                        <div class="flex wishlist-badge"><i class="icon sidze-xs fa-regular fa-heart"></i></div>
+                  <div class="w-100 relative product-img-container">
+                    <img class="w-100 h-100 absolute inset"
+                      src="https://rb.gy/lmyrix"
+                      alt="product image of shorts"
+                    />
+                  </div>
+                  <div class="btn-container hover-cart-btn-container  ">
+                      <button class="w-100 btn btn-sm flex cart-btn">Add To Cart</button>
+                  </div>
+                </div>
+                <div class="w-100 product-content">
+                  <span class="product-title lt-bold">Breakers</span>
+                  <div class="product-description lt-bold">
+                   Men Solid Slim Fit Shorts
+                  </div>
+                  <div class="ratings">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="relative flex product-price-details">
+                    <span class="product-price">₹599</span>
+                    <span class="strike-txt og-price txt-grey">₹899</span>
+                  </div>
+                </div>
+                <div class="w-100 product-footer">
+                    <div class=" btn-container mobile-cart-btn-container">
+                        <button class="w-100 btn btn-xs cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+</body>
+<script src="./product.js"></script>
+</html>
