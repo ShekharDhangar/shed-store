@@ -14,6 +14,8 @@ function changeForm(){
     logInForm.classList.toggle('none');
 }
 // see password value 
-const show_hide_password = event => event.target.classList.toggle('view'); (showPasswordInp.getAttribute('type') == 'password')? showPasswordInp.setAttribute('type', 'text') : showPasswordInp.setAttribute('type', 'password');
+const show_hide_password = event => {
+    event.target.classList.toggle('view'); (showPasswordInp.getAttribute('type') == 'password')? showPasswordInp.setAttribute('type', 'text') : showPasswordInp.setAttribute('type', 'password');
+}
 passwordEye.addEventListener('click',show_hide_password)
 
