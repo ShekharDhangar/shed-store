@@ -82,7 +82,7 @@
     grid-template-columns:repeat(auto-fit,minmax(25%,1fr));
 }
 .product-container .product-card-container{
-    width: 100% !important;
+    width: 100% ;
 }
 .ratings span{
     display: inline-block;
