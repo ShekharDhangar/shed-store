@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script
+      src="https://kit.fontawesome.com/e5dbe6b99b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/cart-management/cart.css">
+    <link rel="stylesheet" href="/product-list/product-media-query.css">
+</head>
+<body>
+    <main>
+        <header>
+            <section class="flex nav-section">
+                <div class="flex logo-container">
+                  <a href="../index.html" class="logo">shed</a>
+                  <div class="nav-icon-grp lt-bold">
+                      <a href="../index.html">
+                          <i class="icon size-xs fas fa-chevron-left"></i>
+                      </a>
+                      <span class="nav-txt">My Bag</span>
+                  </div>
+                </div>
+                <nav class="w-100 h-100 navbar">
+                    <div class="flex nav-icon-container">
+                        <div class="flex pointer profile-box icon-container">
+                            <a href="/authentication/login.html">
+                              <i class="icon user-icon far fa-user"></i>
+                            </a>
+                            <span class="icon-txt">Profile</span>
+                          </div>
+                    </div>
+                </nav>
+                </section>
+        </header>
+
+        <div class="flex heading-container">
+            <p class="txt-md lt-bold heading">My Bag</p>
+        </div>
+        
+        <section class=" flex cart-container">
+            <div class="w-100 cart-products-container">
+                <div class="cart-product-box">
+                    <div class="flex cart-product-content">
+                    <div class="cart-product-details">
+                        <div class="cart-product-description">
+                            <a href="#">Red Plum Sweatshirt Hoodie </a>
+                        </div>
+                            <span class="cart-product-price lt-bold txt-md">₹2443</span>
+                            <span class="cart-og-price strike-txt txt-sm">₹3443</span>
+                        <div class="txt-sm lt-bold cart-product-msg">You saved ₹350!</div>
+                        <div class="flex cart-product-options">
+                            <div class="cart-product-size">
+                                <select name="select-size" class="select-size" >
+                                    <option class="selected-size" >Size: XS</option>
+                                    <option>Size: SM</option>
+                                    <option>Size: MD</option>
+                                    <option>Size: LG</option>
+                                    <option>Size: XL</option>
+                                    <option>Size: XXL</option>
+                                    </select>
+                            </div>
+                            <div class="flex cart-product-quantity">
+                                <button class="quantity-btn flex decrease-quantity">-</button>
+                                <input type="number" class="input quantity-value">
+                                <button class="quantity-btn flex increase-quantity">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-product-image">
+                        <a href="#">
+                            <img src="https://rb.gy/2chnmg" alt="">
+                        </a>
+                    </div>
+                    </div>
+                <div class="cart-product-footer">
+                    <div class=" cart-btn-container txt-center">
+                    <button class="btn-sm light-font  remove-cart-btn">Remove</button>
+                    <button class="btn-sm light-font  add-wishlist-btn">Add to Wishlist</button>
+                </div></div>
+                </div>
+                <div class="cart-product-box">
+                    <div class="flex cart-product-content">
+                    <div class="cart-product-details">
+                        <div class="cart-product-description">
+                            <a href="#">Red Plum Sweatshirt Hoodie </a>
+                        </div>
+                            <span class="cart-product-price lt-bold txt-md">₹2443</span>
+                            <span class="cart-og-price strike-txt txt-sm">₹3443</span>
+                        <div class="txt-sm lt-bold cart-product-msg">You saved ₹350!</div>
+                        <div class="flex cart-product-options">
+                            <div class="cart-product-size">
+                                <select name="select-size" class="select-size" >
+                                    <option class="selected-size" >Size: XS</option>
+                                    <option>Size: SM</option>
+                                    <option>Size: MD</option>
+                                    <option>Size: LG</option>
+                                    <option>Size: XL</option>
+                                    <option>Size: XXL</option>
+                                    </select>
+                            </div>
+                            <div class="flex cart-product-quantity">
+                                <button class="quantity-btn flex decrease-quantity">-</button>
+                                <input type="number" class="input quantity-value">
+                                <button class="quantity-btn flex increase-quantity">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-product-image">
+                        <a href="#">
+                            <img src="https://rb.gy/2chnmg" alt="">
+                        </a>
+                    </div>
+                    </div>
+                <div class="cart-product-footer">
+                    <div class=" cart-btn-container txt-center">
+                    <button class="btn-sm remove-cart-btn light-font"">Remove</button>
+                    <button class="btn-sm add-wishlist-btn light-font">Add to Wishlist</button>
+                </div></div>
+                </div>
+            </div>         
+            <div class="h-100 cart-price-container">
+                <div class="txt-sm cart-offer-msg ">Whistles! Get extra 15% cashback on prepaid orders above 599.</div>
+                <div class="cart-summary-container">
+                    <div class="txt-sm cart-summary-heading lt-bold">PRICE SUMMARY</div>
+                    <div class="cart-price-item">
+                        <p>Total MRP (Incl. of taxes) </p>
+                        <span>₹3192</span>
+                    </div>
+                    <div class="cart-price-item">
+                        <p>Delivery Fee</p>
+                        <span>₹40</span>
+                    </div>
+                    <div class="cart-price-item">
+                        <p>Bag Discount </p>
+                        <span>-₹200</span>
+                    </div>
+                    <div class="cart-price-item">
+                        <p>Subtotal</p>
+                        <span>₹2196</span>
+                    </div>
+                    <div class="txt-xs cart-savings-msg">
+                        <p>You are saving Rs 400 on this order</p>
+                    </div>
+                </div>
+                <div class="flex cart-action-container">
+                    <span class="cart-final-price lt-bold" >Total <span>Rs 2196</span></span>
+                        <button class="w-100 cta-btn btn btn-xs">CONTINUE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="/cart-management/cart.js"></script>
+</html>
