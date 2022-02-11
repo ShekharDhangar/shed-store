@@ -81,12 +81,12 @@
     background-color: var(--clr-grey-100);
 }
 /* PRODUCTS-CONTAINER */
-.product-container{
+.product-list-container{
     display: grid;
     width: 100%;
     grid-template-columns:repeat(auto-fit,minmax(25%,1fr));
 }
-.product-container .product-card-container{
+.product-list-container .product-card-container{
 width: 100%
 }
 .ratings span{
