@@ -65,9 +65,7 @@ input[type=number]::-webkit-outer-spin-button {
     min-width: 12rem;
 }
 .cart-product-image a img{
-    max-width: 100%;
     object-fit: cover;
-    width: 100%;
 }
 
 .cart-product-footer{
