@@ -75,6 +75,7 @@
     width: 20em;
   }
   .nav-icon-grp {
+    padding-left: 5px;
     align-items: center;
     display: flex;
     gap: 5px;
