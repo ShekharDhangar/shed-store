@@ -75,7 +75,8 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     align-items: center;
 }
-.cart-btn-container .btn-sm{
+.cart-btn-container .btn{
+    color: var(--clr-black);
     border:1px solid var(--clr-grey);
     min-width: 50%;
     background-color: var(--clr-white);

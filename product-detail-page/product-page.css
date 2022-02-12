@@ -3,6 +3,7 @@
 .product-main-container{
     margin: 9rem 0 1rem 0;
 }
+
 .product-container{
     align-items: flex-start;
     gap: 2rem;
@@ -51,6 +52,7 @@
     justify-content: flex-start;
 }
 .product-size-btn-container .size-btn{
+    color: var(--clr-black);
     background-color: transparent;
     border: 2px solid var(--clr-black);
     border-radius: 5px;
