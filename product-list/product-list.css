@@ -1,11 +1,10 @@
 @import url('https://shed-ui.netlify.app/component.css');
 @import url(/utilities.css);
 
-.nav-section{
-    height: 6.5rem;
-}
+
 .nav-section .logo-container{
     margin-right: auto;
+    padding-inline:1rem;
 }
 .heading-container{
     margin: 0 auto;
@@ -81,12 +80,16 @@
     background-color: var(--clr-grey-100);
 }
 /* PRODUCTS-CONTAINER */
-.product-container{
+
+.product-list-container{
     display: grid;
     width: 100%;
     grid-template-columns:repeat(auto-fit,minmax(25%,1fr));
 }
-.product-container .product-card-container{
+.product-page-link{
+    padding-inline: 1rem;
+}
+.product-list-container .product-card-container{
 width: 100%
 }
 .ratings span{
@@ -96,7 +99,7 @@ width: 100%
     font-size: 1.25rem;
     cursor: pointer;
     transition: all 0.5s;
-    color: orange;
+    color: var(--clr-ratings);
 }
 .nav-icon-grp{
     display: none;

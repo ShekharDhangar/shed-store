@@ -1,9 +1,9 @@
 @import url(../product-list/product-list.css);
-.product-container{
+.product-list-container{
     justify-items: center;
 }
 
-.product-container .product-card-container{
+.product-list-container .product-card-container{
     width: 100%;
     max-width: 30rem;
 }

@@ -1,8 +1,6 @@
 @import url("../utilities.css");
 
-.nav-section{
-    height: 6.5rem;
-}
+
 .wishlist-icon:hover{
   color: var(--primary-clr);
 }
@@ -88,8 +86,7 @@
   width: 100%;
 }
 .social-icons > a > .icon {
+  width: 3rem;
   height: 3rem;
   margin: 0.5rem 1rem;
-  width: 3rem;
 }
-
