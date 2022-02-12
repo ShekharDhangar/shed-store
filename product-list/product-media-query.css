@@ -75,6 +75,7 @@
     width: 20em;
   }
   .nav-icon-grp {
+    width: 15rem;
     padding-left: 5px;
     align-items: center;
     display: flex;
@@ -188,6 +189,9 @@
   .wishlist-badge .icon {
     height: 2em;
     width: 2em;
+  }
+  .nav-icon-grp {
+    width: 12rem;
   }
 
   .product-card .mobile-cart-btn-container .cart-btn {
