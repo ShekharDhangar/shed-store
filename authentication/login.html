@@ -36,38 +36,36 @@
         <div class="flex form-container">
             <form action="login form register" id="login" class="login-form">
                 <h2 class="form-title txt-center h2">Sign in</h2>
-                <div class="input-box">
                 <div class="input-with-icon">
-                    <i class="icon size-xs far fa-user "></i>
-                    <input type="text"
-                    id = "check-email-inp" placeholder="Email" class="input email-input" required>
+                <i class="icon size-xs far fa-user "></i>
+                <input type="text"
+                id = "check-email-inp" placeholder="Email" class="input email-input" required>
                 </div>
-                    <div class="flex validation-style">
-                        <img class="icon size-xs" src="/assets/warning.png" alt="">
-                        <span class="msg-txt error-txt lt-bold">
-                            Please enter correct email</div>
-                        </span>
-                    </div>
-                    <div class="input-box">
-                        <div class="input-with-icon">
-                            <i class="icon fas fa-key"></i>
-                            <input type="password" placeholder="Password" 
-                            id = "check-password-inp"
-                            class="input password-input">
-                        </div>
-                        <div class="flex validation-style">
-                            <img class="icon size-xs" src="/assets/warning.png" alt="">
-                            <span class="error-txt lt-bold">
-                                Please enter correct Password</div>
-                            </span>
-                        </div>
+                <div class="flex validation-style">
+                <img class="icon size-xs" src="/assets/warning.png" alt="">
+                <span class="msg-txt error-txt lt-bold">
+                Please enter correct email
+                </span>
+                </div>
+                <div class="input-with-icon">
+                <i class="icon fas fa-key"></i>
+                <input type="password" placeholder="Password"
+                id = "check-password-inp"
+                class="input password-input">
+                </div>
+                <div class="flex validation-style">
+                <img class="icon size-xs" src="/assets/warning.png" alt="">
+                <span class="error-txt lt-bold">
+                Please enter correct Password
+                </span>
+                </div>
                 
                 <div class="flex remember-forgot-grp">
                     <div class="flex remember-box">
                         <input type="checkbox" id="yes" name="bydefault" value="yes" class="form-checkbox pointer">
                         <label for="yes" class="lt-bold txt-xs">Remember me</label>
                     </div>
-                    <a href="#" class="login-forgot txt-sm txt-grey">Forgot password?</a>
+                    <a href="#modal-box" class="login-forgot txt-sm txt-grey">Forgot password?</a>
                 </div>
                 <button href="#" type="submit" class="btn btn-md link login-btn">Sign in</button>
 
@@ -85,7 +83,6 @@
                     <a href="#"><img class="icon size-xs" src="https://img.icons8.com/color/48/000000/twitter--v1.png"/></a>
                 </div>
                 <p class="or"><span>or</span></p>
-
 
                 <div class="name-input-box">
                     <div class="input-with-icon ">
@@ -115,9 +112,25 @@
                     <span class="account-yes" >Already have an Account?</span>
                     <a href="#" id="try-login">Sign In</a>
                 </div>
-
             </form>
         </div>
+    </section>
+    <br>
+    <!-- Forgot-Password-Section -->
+    <section>
+        <div id="modal-box" class="flex modal absolute inset">
+            <div class="relative forgot-password-card">
+            <form action="" class="forgot-password-form">
+            <span class="flex heading txt-md lt-bold">Reset password</span>
+            <p class="card-description txt-sm">Enter your email address and we will send you a link to reset your password.</p>
+            <div class="w-100 input-with-icon">
+            <i class="icon email-icon size-xs far fa-envelope"></i>
+            <input type="email" placeholder="Email" class="input email-input" required >
+            </div>
+            <button href="#" type="submit" class="btn btn-sm link reset-btn">Send reset link</button>
+            <a href="#" class="modal-close">×</a>
+            </form>
+            </div>
     </section>
 </main>
 </body>
