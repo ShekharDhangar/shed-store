@@ -1,7 +1,6 @@
 @import url('https://shed-ui.netlify.app/component.css');
 @import url(/utilities.css);
 
-
 .nav-section .logo-container{
     margin-right: auto;
     padding-inline:1rem;
@@ -51,7 +50,7 @@
 .filter-item{
     gap: 1rem;
     justify-content: flex-start;
-    margin: 1rem .25rem;
+    margin: 1rem 2.5px;
     padding: 0 2px;
 }
 .filter-item .checkbox{
@@ -66,17 +65,18 @@
  }
 .sort-container{
     width: 15rem;
-    margin: 0 .25rem;
+    margin: 0 2.5px;
 }
 /* RESET BTN */
-.reset-btn{
-    font-size: 1.25rem;
-    padding: 0 .5rem;
+.clear-btn{
+    font-size: 1.5rem;
+    padding: 0 .75rem;
     border-radius: .5rem;
+    color: var(--clr-black);
     background-color: var(--clr-lightgrey);
     border: 1.5px solid var(--clr-grey);
 }
-.reset-btn:hover{
+.clear-btn:hover{
     background-color: var(--clr-grey-100);
 }
 /* PRODUCTS-CONTAINER */
@@ -90,7 +90,7 @@
     padding-inline: 1rem;
 }
 .product-list-container .product-card-container{
-width: 100%
+    width: 100%
 }
 .ratings span{
     display: inline-block;
