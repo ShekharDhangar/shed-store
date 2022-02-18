@@ -6,7 +6,6 @@
 }
 /* || DISPLAY-IMAGE */
 .display-img-container {
-  position: relative;
   margin-top: 10rem;
   overflow-x: hidden;
 }
@@ -89,4 +88,14 @@
   width: 3rem;
   height: 3rem;
   margin: 0.5rem 1rem;
+}
+.logout-link{
+  position: absolute;
+  top: 6rem;
+  box-shadow: var(--box-shadow-clr);
+  width: max-content;
+  display: none;
+}
+.profile-box:hover .logout-link{
+  display: block;
 }
