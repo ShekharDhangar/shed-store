@@ -10,6 +10,3 @@ HTML,CSS, JAVASCRIPT
 
 ### Additional Things
 - responsive
-
-### Things I want to improve/explore further
-- Adding pagination
