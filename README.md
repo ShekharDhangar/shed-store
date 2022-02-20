@@ -1,2 +1,12 @@
 # shed-store
- A one stop for all your purchase
+
+### About
+SHED-STORE is  one stop platform for all your fashion purchase.
+
+### Preview
+
+### Tech Stack
+HTML,CSS, JAVASCRIPT
+
+### Additional Things
+- responsive
