@@ -10,14 +10,14 @@ sliderInp.addEventListener('input',()=>{
 
 const checkBoxContainer = document.querySelectorAll('.checkbox');
 const radioBtnContainer = document.querySelectorAll('.radio-inp')
-const resetBtn = document.querySelector('.reset-btn')
-resetBtn.addEventListener('click',resetAllFilter)
+const clearBtn = document.querySelector('.clear-btn')
+clearBtn.addEventListener('click',clearAllFilter)
 
 
-function resetAllFilter(){
-    let reset = item => item.checked=false;
-    radioBtnContainer.forEach(reset)
-    checkBoxContainer.forEach(reset)
+function clearAllFilter(){
+    let clear = item => item.checked=false;
+    radioBtnContainer.forEach(clear)
+    checkBoxContainer.forEach(clear)
     sliderInp.value="0"
     sliderValue.textContent="0"
 }

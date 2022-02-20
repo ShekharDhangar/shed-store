@@ -10,7 +10,6 @@
     <script src="https://kit.fontawesome.com/e5dbe6b99b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main >
         <header>
             <section class="flex nav-section">
                 <div class="logo-container">
@@ -39,11 +38,14 @@
                                     <a class="search-btn " href="#"><i class="fa fa-search" aria-hidden="true"></i>
                                     </a>
                             </div>
-                            <div class="flex pointer profile-box icon-container ">
+                            <div class="flex pointer relative profile-box icon-container ">
                                 <a href="/authentication/login.html">
                                     <i class="icon user-icon far fa-user"></i>
                                 </a>
                                 <span class="icon-txt">Profile</span>
+                                <a class="p-1 logout-link" href="/authentication/login.html">
+                                    <span class=" lt-bold icon-txt">Log out</span>
+                                </a>
                             </div>
                             <div class="flex pointer icon-container ">
                                 <a href="./wishlist-page/wishlist.html">
@@ -105,8 +107,9 @@
             </section>
         </aside>
 
+        <main>
         <section>
-            <div class="pointer flex display-img-container  w-100">
+            <div class="pointer relative flex display-img-container  w-100">
                 <img class="display-img" src="https://rb.gy/ksmj18" alt="display image of product">
             </div>
         </section>
@@ -239,6 +242,7 @@
                     <img src="https://rb.gy/w5n8ml" alt="featuring home decor product">
                 </div>
                 </section>
+                </main>
             <footer>
                 <div class="footer-container p-5">
                     <ul class="list-none footer-ul p-1">
@@ -267,7 +271,7 @@
                     </ul>
                 </div>
               </footer>
-    </main>
+  
 </body>
 <script src="./landing-page/landing-page.js"></script>
 
