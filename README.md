@@ -9,5 +9,13 @@ SHED-STORE is  one stop platform for all your fashion purchase.
 ### Tech Stack
 HTML,CSS, JAVASCRIPT
 
+## Features
+-  [HomePage](./index.html)
+-  [Product-list](/product-list/product-list.html)
+-  [Product-page](/product-detail-page/product-page.html)
+-  [Wishlist-page](/wishlist-page/wishlist.html)
+-  [Cart-management](/cart-management/cart.html)
+-  [Authentication](/authentication/login.html)
+
 ### Additional Things
 - responsive
